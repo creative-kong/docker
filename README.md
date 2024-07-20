@@ -89,3 +89,17 @@
      ```
 
      ```--name``` assign a name to the container
+
+## Dockerfile
+  1. ```FROM {image}:{tag}``` -> build image from specified image
+  2. ```WORKDIR {path}``` -> set work directory for following command
+  3. ```COPY {local file} {container file}``` -> copy file and add them to file system 
+  4. ```RUN {command}``` -> execute any command inside container
+  5. ```EXPOSE {port}``` -> set config on the image rthat indicates a port the image
+  6. ```CMD ["commnad 1", "command 2"]``` -> set default command
+  7. ```!!!optional!!!
+     ENV {name} {value}
+     ```
+     -> set env
+ ## NOTE
+   1. docker run is a create a new container don't re-use previous container
